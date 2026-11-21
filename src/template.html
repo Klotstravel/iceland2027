@@ -77,13 +77,9 @@ h2{font-size:34px;line-height:1.2;font-weight:700;color:var(--ink);text-align:ce
 .feat img{width:100%;border-radius:var(--r);cursor:zoom-in;aspect-ratio:4/3;object-fit:cover}
 
 /* продумано */
-.perks{display:grid;grid-template-columns:1fr 1fr;gap:40px 60px;max-width:960px;margin:40px auto 0}
-.perk{display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start}
-.perk .ico{width:52px;height:52px;border-radius:16px;background:#f9e8e8;color:var(--red);display:grid;place-items:center;transition:background .25s,color .25s,transform .25s}
-.perk .ico svg{width:26px;height:26px}
-.perk:hover .ico{background:var(--red);color:#fff;transform:translateY(-2px)}
-.perk h3{padding-top:12px}
-.perk h3{font-size:20px;margin:0 0 6px;color:var(--ink)}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 48px;max-width:1080px;margin:44px auto 0}
+.perk h3{font-size:19px;margin:0 0 8px;color:var(--ink);padding-top:16px;position:relative}
+.perk h3:before{content:"";position:absolute;top:0;left:0;width:32px;height:3px;border-radius:2px;background:var(--red)}
 .perk p{margin:0;font-size:16px}
 
 /* дома */
@@ -166,6 +162,7 @@ footer a{color:var(--muted)}
   .top nav{display:none}
   .rev{flex-basis:calc((100% - 24px) / 1.6)}
   .feat{gap:24px}
+  .perks{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
   body{font-size:16px}
@@ -181,11 +178,7 @@ footer a{color:var(--muted)}
   .feat{grid-template-columns:1fr;margin-bottom:30px}
   .feat img{order:-1}
   .feat h3{font-size:20px}
-  .perks{grid-template-columns:1fr;gap:26px}
-  .perk{grid-template-columns:44px 1fr;gap:14px}
-  .perk .ico{width:44px;height:44px;border-radius:13px}
-  .perk .ico svg{width:22px;height:22px}
-  .perk h3{padding-top:8px}
+  .perks{grid-template-columns:1fr;gap:30px}
   .house{grid-template-columns:1fr 1fr}
   .lists{grid-template-columns:1fr;gap:20px}
   .lists h3{font-size:22px}
@@ -275,12 +268,12 @@ footer a{color:var(--muted)}
     <h2 class="reveal">Поездка продумана до мелочей!</h2>
     <p class="lead reveal">По итогам более чем 20 поездок в Исландию составлены оптимальные маршруты, забронированы самые классные дома и учтены все нюансы</p>
     <div class="perks">
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .7-1.5l7-6a2 2 0 0 1 2.6 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><h3>Комфортное размещение</h3><p>Мы живем в комфортабельных коттеджах и гостиницах в комнатах с размещением по 2 человека. Некоторые дома имеют террасу, горячую ванну на улице, барбекю и находятся в потрясающих местах.</p></div></div>
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><div><h3>Полноприводные автомобили</h3><p>Мы передвигаемся на полноприводных комфортабельных кроссоверах, проедем туда, куда не доедут туристы на легковушках и автобусах. В машине 4 человека - каждый у окна!</p></div></div>
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.9a10 10 0 0 1 14 0"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/></svg></span><div><h3>Безлимитный доступ в интернет!</h3><p>У нас с собой <strong>4G Wi-Fi роутеры</strong>, чтобы мы всегда были на связи и смогли выкладывать фотки и делиться впечатлениями!</p></div></div>
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><div><h3>Компактная группа</h3><p>Размер группы до 8 человек, отличное количество для того, чтобы быть единой веселой командой!</p></div></div>
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg></span><div><h3>Лучшие фото и видео</h3><p>Вы сделаете фотографии с <strong>лучших ракурсов</strong>, я покажу их, а также у меня всегда с собой профессиональный <strong>фотоаппарат и дрон</strong>, чтобы сделать самые бомбические фото и видео.</p></div></div>
-      <div class="perk reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg></span><div><h3>Консультации по всем вопросам</h3><p>У вас будет вся информация о том, что с собой взять, а что не стоит, какую одежду, обувь, что и где будем есть, <strong>объясню все нюансы</strong> и отвечу на любые вопросы, чтобы сделать поездку <strong>максимально комфортной!</strong></p></div></div>
+      <div class="perk reveal"><h3>Комфортное размещение</h3><p>Мы живем в комфортабельных коттеджах и гостиницах в комнатах с размещением по 2 человека. Некоторые дома имеют террасу, горячую ванну на улице, барбекю и находятся в потрясающих местах.</p></div>
+      <div class="perk reveal"><h3>Полноприводные автомобили</h3><p>Мы передвигаемся на полноприводных комфортабельных кроссоверах, проедем туда, куда не доедут туристы на легковушках и автобусах. В машине 4 человека - каждый у окна!</p></div>
+      <div class="perk reveal"><h3>Безлимитный доступ в интернет!</h3><p>У нас с собой <strong>4G Wi-Fi роутеры</strong>, чтобы мы всегда были на связи и смогли выкладывать фотки и делиться впечатлениями!</p></div>
+      <div class="perk reveal"><h3>Компактная группа</h3><p>Размер группы до 8 человек, отличное количество для того, чтобы быть единой веселой командой!</p></div>
+      <div class="perk reveal"><h3>Лучшие фото и видео</h3><p>Вы сделаете фотографии с <strong>лучших ракурсов</strong>, я покажу их, а также у меня всегда с собой профессиональный <strong>фотоаппарат и дрон</strong>, чтобы сделать самые бомбические фото и видео.</p></div>
+      <div class="perk reveal"><h3>Консультации по всем вопросам</h3><p>У вас будет вся информация о том, что с собой взять, а что не стоит, какую одежду, обувь, что и где будем есть, <strong>объясню все нюансы</strong> и отвечу на любые вопросы, чтобы сделать поездку <strong>максимально комфортной!</strong></p></div>
     </div>
   </div>
 </section>
