@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Исландия лето 2027 — Klots Travel</title>
+<meta name="description" content="Путешествие к водопадам и вулканам: авторский тур по Исландии малой группой до 8 человек, июнь–июль 2027.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Исландия лето 2027">
+<meta property="og:description" content="Путешествие к водопадам и вулканам">
+<meta property="og:image" content="https://iceland2027.klotstravel.com/img/og.jpg">
+<meta property="og:url" content="https://iceland2027.klotstravel.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/jost-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:400;font-display:swap;src:url(fonts/jost-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Jost;font-weight:400;font-display:swap;src:url(fonts/jost-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+@font-face{font-family:Jost;font-weight:500;font-display:swap;src:url(fonts/jost-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Jost;font-weight:500;font-display:swap;src:url(fonts/jost-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+@font-face{font-family:Jost;font-weight:700;font-display:swap;src:url(fonts/jost-cyrillic-700-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Jost;font-weight:700;font-display:swap;src:url(fonts/jost-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+:root{--red:#b81a1a;--red-dark:#9a1414;--ink:#111;--text:#222;--muted:#777;--grey:#f0f0f0;--grey2:#f5f5f5;--grey3:#efefef;--card:#f6f6f6;--wrap:1160px;--r:10px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:Jost,'Futura PT',Futura,'Trebuchet MS',Arial,sans-serif;font-size:18px;line-height:1.55;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+strong,b{font-weight:700}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.narrow{max-width:900px}
+h2{font-size:34px;line-height:1.2;font-weight:700;color:var(--ink);text-align:center;margin:0 0 28px}
+.sec{padding:64px 0}
+.sec.tight{padding:36px 0}
+.lead{text-align:center;max-width:760px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:14px 36px;border-radius:8px;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.center{text-align:center}
+
+/* шапка */
+.top{position:fixed;left:0;right:0;top:0;z-index:50;background:rgba(255,255,255,.96);box-shadow:0 1px 0 rgba(0,0,0,.06);transform:translateY(-100%);transition:transform .3s}
+.top.show{transform:none}
+.top .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.logo{font-weight:700;font-size:22px;letter-spacing:.02em;text-decoration:none;color:var(--ink);margin-right:auto}
+.top nav{display:flex;gap:24px;font-weight:500;font-size:16px}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:var(--red)}
+.top .btn{padding:9px 20px;font-size:15px}
+.bottomnav{display:none}
+
+/* обложка */
+.cover{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#222 center/cover no-repeat;padding:80px 20px}
+.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.45))}
+.cover>*{position:relative}
+.cover .kicker{font-size:22px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin:0 0 20px}
+.cover .dates{font-size:22px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.3;margin:0 0 26px}
+.cover h1{font-size:92px;line-height:1;margin:0 0 54px;font-weight:700}
+.cover .btn{font-size:18px;padding:16px 46px}
+.cover .scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:28px;height:28px;border-right:2px solid #fff;border-bottom:2px solid #fff;rotate:45deg;opacity:.8;animation:bob 2s infinite}
+@keyframes bob{50%{translate:0 6px}}
+
+/* фото-ленты */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}
+.strip img,.house img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.strip figure{margin:0;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden}
+.strip img{transition:transform .5s}
+.strip figure:hover img{transform:scale(1.04)}
+
+/* тексты */
+.text p{margin:0 0 1.1em}
+.text p:last-child{margin-bottom:0}
+
+/* карточки с фото */
+.feat{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start;margin-bottom:36px}
+.feat h3{font-size:22px;line-height:1.35;margin:0 0 18px;color:var(--ink)}
+.feat img{width:100%;border-radius:var(--r);cursor:zoom-in;aspect-ratio:4/3;object-fit:cover}
+
+/* продумано */
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:40px 60px;max-width:960px;margin:40px auto 0}
+.perk{display:grid;grid-template-columns:50px 1fr;gap:16px}
+.perk img{width:44px;height:44px}
+.perk h3{font-size:20px;margin:0 0 6px;color:var(--ink)}
+.perk p{margin:0;font-size:16px}
+
+/* дома */
+.house{display:grid;grid-template-columns:repeat(4,1fr)}
+.house figure{margin:0;aspect-ratio:4/3;overflow:hidden}
+
+/* цена */
+.price{background:var(--grey)}
+.price .sum{font-size:22px}
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin:40px 0 36px}
+.lists h3{text-align:center;font-size:26px;margin:0 0 20px;color:var(--ink)}
+.lists ul{list-style:none;padding:0;margin:0}
+.lists li{position:relative;padding-left:22px;margin-bottom:16px;font-size:17px}
+.lists li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--red)}
+
+/* отзывы */
+.quotes{max-width:780px;font-size:19px;font-style:italic}
+.quotes p{margin:0 0 22px}
+.quotes span{font-style:normal}
+.revhead{display:flex;align-items:center;gap:16px;margin:36px 0 26px}
+.revhead h3{margin:0 auto 0 0;font-size:21px;color:var(--ink)}
+.arrow{width:44px;height:44px;border-radius:50%;border:0;background:var(--card);cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.arrow:hover{background:#e6e6e6}
+.arrow svg{width:18px;height:18px}
+.slider{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:0 20px 14px;margin:0 auto;max-width:calc(var(--wrap) + 40px);scrollbar-width:none}
+.slider::-webkit-scrollbar{display:none}
+.rev{flex:0 0 calc((100% - 48px) / 2.6);scroll-snap-align:start;background:var(--card);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+.rev .who{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.rev .who img{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none}
+.rev .who b{display:block;font-size:22px;color:var(--ink)}
+.rev .who span{font-size:14px;color:var(--muted)}
+.rev .body{font-size:16px;display:-webkit-box;-webkit-line-clamp:10;-webkit-box-orient:vertical;overflow:hidden}
+.rev .more{margin-top:12px;align-self:flex-start;background:none;border:0;padding:0;font:inherit;font-size:16px;color:var(--red);cursor:pointer;font-weight:500}
+.rev .more[hidden]{display:none}
+
+/* программа */
+.program{background:var(--grey2)}
+.day{margin-bottom:22px}
+.day b{display:block;color:var(--ink)}
+.note{font-size:15px;color:#555;margin-top:30px}
+
+/* контакт */
+.contact{background:var(--grey3);text-align:center}
+.contact .me{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:10px auto 16px;cursor:zoom-in}
+.contact .name{font-size:26px;font-weight:700;color:var(--ink);margin:0}
+.contact .role{margin:0 0 14px;font-weight:700}
+.contact .bio{max-width:600px;margin:0 auto 32px}
+.contact .msg{font-weight:700;font-size:20px;margin:0 0 18px;color:var(--ink)}
+.mess{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.mess a{display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;text-decoration:none;font-weight:500;padding:13px 26px 13px 16px;border-radius:40px;transition:background .2s}
+.mess a:hover{background:var(--red)}
+.mess svg{width:26px;height:26px}
+
+footer{padding:26px 20px 90px;text-align:center;font-size:14px;color:var(--muted)}
+footer a{color:var(--muted)}
+
+.totop{position:fixed;right:20px;bottom:20px;z-index:40;width:46px;height:46px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;display:grid;place-items:center}
+.totop.show{opacity:1;pointer-events:auto}
+
+/* окна */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal .box{background:#fff;border-radius:16px;max-width:640px;width:100%;max-height:86vh;overflow:auto;padding:34px;position:relative}
+.close{position:absolute;top:10px;right:10px;width:40px;height:40px;border:0;background:none;font-size:30px;line-height:1;cursor:pointer;color:#555}
+.lb{background:rgba(0,0,0,.92);padding:0}
+.lb img{max-width:94vw;max-height:88vh;object-fit:contain;border-radius:4px;user-select:none}
+.lb .close{color:#fff;top:14px;right:14px}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:30px;cursor:pointer}
+.lb .prev{left:16px}.lb .next{right:16px}
+.lb .count{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#ccc;font-size:14px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .top nav{display:none}
+  .rev{flex-basis:calc((100% - 24px) / 1.6)}
+  .feat{gap:24px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  h2{font-size:26px;margin-bottom:22px}
+  .sec{padding:44px 0}
+  .top .wrap{height:56px}
+  .logo{font-size:18px}
+  .top .btn{padding:8px 16px;font-size:14px}
+  .cover .kicker{font-size:15px}
+  .cover .dates{font-size:16px}
+  .cover h1{font-size:54px;margin-bottom:36px}
+  .strip{grid-template-columns:1fr 1fr;gap:10px;padding:10px}
+  .feat{grid-template-columns:1fr;margin-bottom:30px}
+  .feat img{order:-1}
+  .feat h3{font-size:20px}
+  .perks{grid-template-columns:1fr;gap:26px}
+  .house{grid-template-columns:1fr 1fr}
+  .lists{grid-template-columns:1fr;gap:20px}
+  .lists h3{font-size:22px}
+  .rev{flex-basis:86%;padding:22px}
+  .revhead .arrow{display:none}
+  .quotes{font-size:17px}
+  .bottomnav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);box-shadow:0 -1px 0 rgba(0,0,0,.08);justify-content:space-around;padding:10px 4px calc(10px + env(safe-area-inset-bottom));font-size:13px;font-weight:500;transform:translateY(100%);transition:transform .3s}
+  .bottomnav.show{transform:none}
+  .bottomnav a{text-decoration:none;padding:4px 6px}
+  .totop{bottom:76px;right:12px;width:40px;height:40px}
+  .lb .nav{display:none}
+  .modal .box{padding:28px 22px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="https://klotstravel.com/">KLOTSTRAVEL.COM</a>
+    <nav>
+      <a href="#about">Что будет в поездке</a>
+      <a href="#houses">Где живем</a>
+      <a href="#price">Условия</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#program">Программа</a>
+    </nav>
+    <a class="btn" href="#contact">Поехали!</a>
+  </div>
+</header>
+
+<section class="cover" style="background-image:url(img/cover01.jpg)">
+  <div>
+    <p class="kicker">Путешествие к водопадам и вулканам</p>
+    <p class="dates">3 - 10 июня 2027<br>10 - 17 июня 2027<br>17 - 24 июня 2027<br>24 июня - 1 июля 2027<br>1 - 8 июля 2027<br>8 - 15 июля 2027</p>
+    <h1>Исландия</h1>
+    <a class="btn" href="#contact">Поехали!</a>
+  </div>
+  <a class="scroll" href="#about" aria-label="Листать вниз"></a>
+</section>
+
+<div class="strip" data-gallery><figure><img src="img/strip101.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip102.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip103.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip104.jpg" alt="Исландия" loading="lazy"></figure></div>
+
+<section class="sec" id="about">
+  <div class="wrap narrow text reveal">
+    <p>Исландия - это самое невероятное место на Земле, здесь видишь, какой была наша планета миллионы лет назад!</p>
+    <p>Вместе мы исследуем все грани Исландии, будем подниматься на вулканы и наблюдать настоящие марсианские пейзажи, смотреть на огромные водопады сверху и спускаться к их подножию, гулять вдоль ледников и по черным пляжам, купаться в горячих источниках и очень вкусно есть.</p>
+    <p>Июнь и июль - месяцы, когда в Исландии бесконечный день (светло даже ночью), открыты дороги в центр страны, по всей стране бесконечные поля потрясающих люпинов и прилетели самые милые в мире птички тупики.</p>
+  </div>
+  <div class="wrap narrow text reveal" style="margin-top:56px">
+    <h2>Что нас ждет?</h2>
+    <p>Уже стало модным в описании поездок говорить, что мы не будем посещать популярные достопримечательности, а поедем только в секретные места. Но мы обязательно посетим <strong>все основные места</strong> (они ведь неспроста такие, а потому что очень круты!)</p>
+    <p>А также заедем в <strong>удаленные локации центра страны</strong>, куда не добираются на легковушках и автобусах, в "секретные" точки, про которые почти никто (или совсем никто) не знает. Например, поедем провожать закат к обрыву с маяком и будем там совершенно одни, проедем дорогой через лавовые поля, описанной в древних сагах, и многое другое!</p>
+    <p>В этой поездке мы посетим самые потрясающие регионы Исландии: запад, юг и центр. Путешествуем на джипах 4х4, останавливаемся в комфортабельных домах и отелях.</p>
+  </div>
+</section>
+
+<div class="strip" data-gallery><figure><img src="img/strip201.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip202.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip203.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/strip204.jpg" alt="Исландия" loading="lazy"></figure></div>
+
+<section class="sec">
+  <div class="wrap">
+    <h2 class="reveal">Поездка, которая перевернет вашу жизнь!</h2>
+    <div class="feat reveal">
+      <div class="text"><h3>Неземные пейзажи</h3><p>Ледники, водопады, поля застывшей лавы и вулканы - эти пейзажи окружают тебя в Исландии постоянно и сменяются один за другим. Подняться на кратер вулкана, оказаться у подножия водопада и увидеть тысячелетние льды на черном пляже - лишь некоторые из наших планов.</p></div>
+      <div data-gallery><img src="img/feat01.jpg" alt="Гора Киркьюфетль и водопад" loading="lazy"></div>
+    </div>
+    <div class="feat reveal">
+      <div class="text"><h3>Постоять на краю кратера, пройти за водопадом и побывать на Марсе</h3><p>Мы посмотрим на озера в жерлах потухших вулканов, увидим сотни водопадов, побываем в местах, где идет дым из-под земли, бурлят гейзеры, а земля такая красная, что кажется, будто мы на Марсе.</p></div>
+      <div data-gallery><img src="img/feat02.jpg" alt="Озеро в кратере вулкана" loading="lazy"></div>
+    </div>
+    <div class="feat reveal">
+      <div class="text"><h3>Искупаться в горячих источниках и красивых СПА</h3><p>Обычное дело для жителя Исландии - искупаться в бассейне под открытым небом, ванне во дворе или просто в горячей реке, даже когда на улице чуть выше 0! Ведь вода поступает из самых недр Земли!</p><p>Горячая река или самое красивое SPA Исландии. А может, и то, и другое?</p></div>
+      <div data-gallery><img src="img/feat03.jpg" alt="Горячий источник" loading="lazy"></div>
+    </div>
+    <div class="feat reveal">
+      <div class="text"><h3>Места съемок десятков фильмов и (вы же знали?) "Игры престолов"</h3><p>Пейзажи Исландии настолько фантастичны, что здесь проходили съемки множества фильмов.</p><p>Конечно же, в первую очередь, это "Игра престолов", и для фанатов сериала - мы будем в нескольких местах, где его снимали, сделаем фотки как будто мы Дайнерис или Джон Сноу. А также в местах съемок фильмов "Бэтмэн: Начало", "Тайная жизнь Уолтера Митти", "Прометей" и других!</p></div>
+      <div data-gallery><img src="img/feat04.jpg" alt="Места съемок «Игры престолов»" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="reveal">Поездка продумана до мелочей!</h2>
+    <p class="lead reveal">По итогам более чем 20 поездок в Исландию составлены оптимальные маршруты, забронированы самые классные дома и учтены все нюансы</p>
+    <div class="perks">
+      <div class="perk reveal"><img src="img/icons01.svg" alt=""><div><h3>Комфортное размещение</h3><p>Мы живем в комфортабельных коттеджах и гостиницах в комнатах с размещением по 2 человека. Некоторые дома имеют террасу, горячую ванну на улице, барбекю и находятся в потрясающих местах.</p></div></div>
+      <div class="perk reveal"><img src="img/icons02.svg" alt=""><div><h3>Полноприводные автомобили</h3><p>Мы передвигаемся на полноприводных комфортабельных кроссоверах, проедем туда, куда не доедут туристы на легковушках и автобусах. В машине 4 человека - каждый у окна!</p></div></div>
+      <div class="perk reveal"><img src="img/icons03.svg" alt=""><div><h3>Безлимитный доступ в интернет!</h3><p>У нас с собой <strong>4G Wi-Fi роутеры</strong>, чтобы мы всегда были на связи и смогли выкладывать фотки и делиться впечатлениями!</p></div></div>
+      <div class="perk reveal"><img src="img/icons04.svg" alt=""><div><h3>Компактная группа</h3><p>Размер группы до 8 человек, отличное количество для того, чтобы быть единой веселой командой!</p></div></div>
+      <div class="perk reveal"><img src="img/icons05.svg" alt=""><div><h3>Лучшие фото и видео</h3><p>Вы сделаете фотографии с <strong>лучших ракурсов</strong>, я покажу их, а также у меня всегда с собой профессиональный <strong>фотоаппарат и дрон</strong>, чтобы сделать самые бомбические фото и видео.</p></div></div>
+      <div class="perk reveal"><img src="img/icons06.svg" alt=""><div><h3>Консультации по всем вопросам</h3><p>У вас будет вся информация о том, что с собой взять, а что не стоит, какую одежду, обувь, что и где будем есть, <strong>объясню все нюансы</strong> и отвечу на любые вопросы, чтобы сделать поездку <strong>максимально комфортной!</strong></p></div></div>
+    </div>
+  </div>
+</section>
+
+<h2 class="reveal" style="padding:0 20px">А еще море впечатлений и отличная компания!</h2>
+<div class="strip" data-gallery><figure><img src="img/fun01.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun02.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun03.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun04.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun05.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun06.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun07.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure><figure><img src="img/fun08.jpg" alt="Наши поездки в Исландию" loading="lazy"></figure></div>
+
+<section class="sec" id="houses" style="padding-bottom:36px">
+  <div class="wrap reveal">
+    <h2>Где мы будем жить?</h2>
+    <p class="lead">Мы живем в уютных и комфортабельных домах с размещением по 2 человека в комнате, эти дома находятся в красивых и удобных с точки зрения маршрута локациях. Всегда есть кухня, а иногда и барбекю, где мы сможем приготовить себе вкуснейший завтрак и стейки на ужин. Также иногда будем жить в отелях, тогда завтрак будет включен. В некоторых домах есть гидромассажная ванна с горячей водой, в которой приятно посидеть вечером после насыщенного дня.</p>
+  </div>
+</section>
+<div class="house" data-gallery><figure><img src="img/house01.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house02.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house03.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house04.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house05.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house06.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house07.jpg" alt="Дом, где мы живем" loading="lazy"></figure><figure><img src="img/house08.jpg" alt="Дом, где мы живем" loading="lazy"></figure></div>
+
+<section class="sec price" id="price">
+  <div class="wrap">
+    <h2>Стоимость участия</h2>
+    <p class="center sum">Стоимость участия <strong>3200 евро</strong></p>
+    <p class="center">Для того, чтобы забронировать место в поездке, свяжитесь со мной по ссылкам в мессенджеры ниже.</p>
+    <div class="lists">
+      <div><h3>Включено в стоимость:</h3><ul>
+        <li>Проживание в комфортабельных домах и гостиницах. Размещение по 2 человека в комнате.</li>
+        <li>Аренда автомобилей, топливо, платные парковки. Мы будем передвигаться на вместительных полноприводных кроссоверах, поэтому сможем доехать до таких мест, куда обычные легковушки не смогут.</li>
+        <li>Входные билеты в платные природные локации.</li>
+        <li>4G wi-fi роутер в каждой машине на все время поездки - у нас будет непрерывный доступ в интернет.</li>
+        <li>Круглосуточное сопровождение гида и любые консультации до поездки.</li>
+      </ul></div>
+      <div><h3>Не включено:</h3><ul>
+        <li>Авиабилеты до Рейкьявика.</li>
+        <li>Питание (кроме завтраков в гостиницах там, где включены). Мы будем как питаться в гостиницах, кафе и ресторанах, так и покупать продукты в магазинах и готовить завтрак и ужин сами. В некоторых домах, где мы будем жить, есть барбекю, на котором можно приготовить вкуснейшую баранину или рыбу. Ориентировочно 300-500 евро на человека.</li>
+        <li>Медицинская страховка.</li>
+        <li>Личные расходы, сувениры, вход в spa и музеи.</li>
+      </ul></div>
+    </div>
+    <p class="center"><a class="btn" href="#contact">Поехали</a></p>
+  </div>
+</section>
+
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <h2 style="text-align:left">Отзывы</h2>
+    <div class="quotes">
+      <p>"Эта была одна из лучших поездок в моей жизни, как с точки зрения насыщенности, зрелищности, так и с точки зрения организации" <span>- Ирина, участница поездки в Исландию в июне 2025 г.</span></p>
+      <p>"Это была удивительная поездка, в которой все было продуманно до мелочей. Сказочно красивая природа, небольшие трекинги, лежание в горячих источниках и главное - это забота, которой нас окружил влюбленный в свое дело Петр" <span>- Лиза, участница поездки в Исландию в сентябре 2026 г.</span></p>
+    </div>
+    <div class="revhead">
+      <h3>Ваши незабываемые впечатления и эмоции - лучшая награда!</h3>
+      <button class="arrow" data-dir="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arrow" data-dir="1" aria-label="Вперед"><svg viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="slider" id="slider"><article class="rev"><div class="who"><img src="img/avatars01.jpg" alt="" loading="lazy"><div><b>Стася</b><span>2026 год</span></div></div><div class="body">Благодаря Пете, это была лучшая моя поездка! А я путешественница с большим опытом! Все было идеально! Логистика маршрута, жилье, питание - высший пилотаж! А гид у нас был - самый лучший! Петя потрясающий, влюбленный в Исландию, в свою работу и в своих туристов! Огромная благодарность за эту замечательную поездку! <br>Уже завидую белой завистью, тем у кого еще впереди путешествие с Петей!<br>А я с нетерпением жду следующей с ним поездки!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars02.jpg" alt="" loading="lazy"><div><b>Милаша</b><span>2026 год</span></div></div><div class="body">Исландия заняла список топ-5 самых незабываемых поездок, где я когда-либо бывала!<br><br>Какой маршрут? Сколько ещё ехать? Что будем есть? Где купить сувениры? Скоро остановка, чтобы выпить кофе и сходить в туалет? У нас будет хайкинг? Сколько водопадов в Исландии? Сколько всего овец живёт в стране и ещё бесчисленное количество вопросов, связанных с логистикой и вообще Исландией, которые мы задавали бесконечно Пете, а он беспрерывно отвечал на все эти вопросы, как будто до этого ещё миллион других людей и не задавали ему подобных вопросов.Так что, один только памятник нужно поставить организатору за терпение и стальные нервы, можно только позавидовать такой выдержке!<br><br>Мне, как самостоятельному путешественнику, который привык планировать каждый свой шаг: заранее бронировать отели, рестораны, экскурсии и знать, когда и я где буду находиться, первоначально было сложно свыкнуться с тем, что каждый новый день - это сюрприз.<br>Но уже на второй день я поняла, что попала в свой маленький рай, в котором, мне хочется забыть обо всем происходящем, включая работу и просто наслаждаться увиденным.<br><br>Гейзеры, горячие источники, черные песчаные пляжи, ледники, водопады - это лишь малая часть того, что мы увидели за эту неделю. Интересно, что Исландия признана одной из самых безопасных и чистых стран мира, где водопроводная вода считается самой вкусной и чистой. Здесь можно попробовать акулу, голубые яйца черного листика и фиш джерки, которое, как оказалось, нужно есть только с солёным маслом, иначе, на вкус - что-то очень странное.<br><br>Я зарядилась энергией, мои глаза насытились этими красотами и я до сих пор пребываю в этом невероятном состоянии эйфории, которое подарила мне Исландия и наша поездка. Это феноменальная «страна огня и льда», где соседствуют действующие вулканы и гигантские ледники. Нереальная природа, живописность, а главное такие места, где хочется остановить время, выключить телефон и просто наслаждаться тем, что такое в жизни вообще бывает.<br><br>Особенно я хочу отметить любовь Пети к Исландии, ведь она чувствуется не просто в каждом слове, действии, а желании объять необъятное и показать нам, туристам, самые живописные уголки этой страны!<br><br>Спасибо за исполнение моей маленькой мечты и воплощение сказки в реальность! Исландия навсегда останется в моём сердце!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars03.jpg" alt="" loading="lazy"><div><b>Света</b><span>2026 год</span></div></div><div class="body">В июне 2026 осуществилась моя давняя мечта - поездка в Исландию. Мы с мужем присоединились к группе Петра. А далее было как в знаменитом стихотворении:" Горы и недры, Север и юг, Пальмы и кадры, Покажет вам Кук"... только у нас в место Кука был Петр. С огромной любовью он показал нам эту удивительную страну. Никаких головных болей о логистике, начиная от встречи в аэропорту и до грустного расторжения там же, Петя все время был с нами и для нас. Все наши вопросы получили ответы и пожелания исполнялись... Петя знал все: где купить вкусный кофе, тёплый супчик, где хороший ресторан, все остановки с туалетоми))), не говоря о всех чудесах, что мы увидели с ним. У нас осталась куча фото снятых его профессиональной рукой. Петя очень приятный и положительный парень, нам было с ним легко, приятно и очень комфортно. И осталось только одно сожаление, что он не организовывает туры в другие страны, хочется надеется, что это временно. Петя, огромное тёбе спасибо за эту неделю и за все впечатления что мы увезли с собой! Спасибо всей группе, за общение и отличную компанию!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars04.jpg" alt="" loading="lazy"><div><b>Константин</b><span>2026 год</span></div></div><div class="body">Поездка с Петей мне очень понравилась прежде всего тем, насколько хорошо всё было организовано. Всё вовремя, проживание комфортное, дома и апартаменты очень приличные, машины хорошие, маршруты понятные, логичные и в целом безопасные. Ну а природа Исландии тут вообще без комментариев. Отдельно хочется сказать про самого Петю. Он очень внимателен к каждому человеку в группе и действительно старается учитывать индивидуальные пожелания. При этом огромное количество бытовых и организационных вопросов он просто берёт на себя: завтраки, ужины, рестораны, логистика, какие-то изменения по ходу поездки. Чувствуется огромный опыт, и всё решается очень быстро и спокойно. Петя всегда позитивный и конструктивный. Такое ощущение, что плохого настроения у него вообще не бывает. И что особенно круто, он умеет искренне радоваться вместе с тобой каждому месту и каждой достопримечательности, хотя видел всё это уже миллион раз. В итоге поездка воспринимается не как тур с гидом, а скорее как путешествие с человеком, который отлично знает страну, всё организовал за тебя и при этом остаётся полноценной частью вашей компании. Петя, большое спасибо!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars05.jpg" alt="" loading="lazy"><div><b>Саша</b><span>2025 год</span></div></div><div class="body">Май 2025 подарил мне совершенно незабываемую поездку в Исландию! Неделя непередаваемых эмоций, которые останутся со мной навсегда! <br><br>Исландия такая одна! Она неповторима и увидеть ее непременно стоит! Гейзеры, водопады, термальные источники, вулканы, неописуемой красоты природа! Тюлени, горные олени - особая любовь! <br><br>Если вы думаете ехать, даже не думайте! Поездка именно с Петей - это было лучшее решение! Его любовь к Исландии- она во всем и чувствовалась на протяжении всей поездки! Петя подбирает уникальные маршруты, удобные авто, безумно комфортные дома! На протяжении всего путешествия у нас был wi fi ( да, даже в машине)! Огромный бонус - это дрон, который он берет в поездки. Увидеть водопады, ледники, горы с высоты птичьего полета - уникально! Мы чувствовали себя очень комфортно и послевкусие от поездки не отпускает. За что Пете огромное спасибо!!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars06.jpg" alt="" loading="lazy"><div><b>Галит</b><span>2025 год</span></div></div><div class="body">Невероятно красиво везде и всюду. Не надо было ни о чем думать— все продумано уже Петей до мелочей. Я в первый раз не смотрела ни на карту, ни на названия. Просто наслаждалась. Очень-очень насыщенно и невероятно продуманный выбор мест: я видела в Рилзах, что самые крутые места мы посетили, и самые крутые но не самые известные — тоже. Безумно круто, что нигде не было толп туристов. И Петя знал когда и куда приехать так, чтобы этого избежать. <br>Вообще ощущение «Петя уже за меня подумал» было на протяжении всей поездки:) <br>Отдельное спасибо за то, что Петя рассказывал на английском для моего молодого человека так и что нам удалось балансировать между языками так, чтобы всем было комфортно.</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars07.jpg" alt="" loading="lazy"><div><b>Ирина</b><span>2025 год</span></div></div><div class="body">Эта была одна из лучших поездок в моей жизни, как с точки зрения насыщенности, зрелищности, так и с точки зрения организации. Иногда в групповых турах сталкиваешься с тем, что гид действует строго по запланированной программе, но при этом чувствуется некоторая отстраненность и отсутствие желания поделиться информацией о стране, том или ином посещаемом объекте, погрузить туристов в особенности страны. <br>Поездка, организованная Петей, кардинально отличается от этой концепции: мы видели какое-то невообразимое количество красивых мест, узнали много нового о стране, природе, людях, нам предлагались лучшие локации для самых ярких и необычных фотографий. <br>Идея проживания в домах, где есть возможность вместе завтракать и ужинать, мне видится очень удачной, так группа становится дружнее, есть возможность приятно и весело проводить время перед и после насыщенных дней.<br>Программа продумана детально до мелочей и за это огромное спасибо!!!<br>С первой минуты чувствуется как Петя любит эту страну и как хочет всем этим поделиться с почти незнакомыми людьми, такое можно встретить нечасто, что очень приятно и безусловно заражает позитивной энергией!<br>Еще одна моя мечта сбылась! и Спасибо за этой Вселенной и Пете!:)</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars08.jpg" alt="" loading="lazy"><div><b>Марина</b><span>2024 год</span></div></div><div class="body">Все знают, что Исландия - это удивительный край, потрясающие пейзажи, невероятная природа! Обязательно нужно совершить сюда путешествие и только - с Петей! <br><br>Моё твердое убеждение, что Петя лучший проводник по этой чудесной стране. Мы посетили не только знаковые и всем известные локации, но и тайные местечки, куда доезжает редкий турист, жили в уютных домах с живописными видами, жарили вкуснейшее мясо на ужин, принимали горячие ванны под звездами, общались, устраивали пикник на обочине, испытали лавину эмоций и проехали сотни километров разного вида дорог. Ну конечно же услышали массу интересной информации об Исландии, коей Петя обладает в большом количестве :) <br>Это все обязательно НУЖНО испытать!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars09.jpg" alt="" loading="lazy"><div><b>Маша</b><span>2025 год</span></div></div><div class="body">Очень классная поездка, организация , компания, все сплелось воедино в потрясающей Исландии. Очень комфортно и все продумано по режиму, я не уставала и страдала от недосыпа и всегда могла поспать в дороге, (но я не была за рулем). Отдельная благодарность за WiFi, по пути любуешься красотами и читаешь новости, на связи с миром, что было особенно важно в данный момент. Всё учтено: лучшие локации, приятные дома и гостиницы, секретные местечки, комфортный транспорт, весёлая компания.<br>Потрясающие по своей насыщенности дни, Дружные и вкуснейшие завтраки и ужины приготовленные с особым теплом<br>Петя, с тобой красиво, ярко, интересно, комфортно, спокойно, фотогенично и надёжно!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars10.jpg" alt="" loading="lazy"><div><b>Света</b><span>2025 год</span></div></div><div class="body">Это было лучшее время, поездка, которую не хотелось завершать! Ощущение, что мы побывали на другой планете. Я очень рада - моя мечта увидеть Исландию своими глазами стала невероятной сказкой, наполненной восторгом от соприкосновения с уникальной природой, культурой, людьми и овцами)<br>Петя заботился о нас, продумал все детали, так что нам можно было расслабиться и впитывать в себя впечатления!) Спасибо!!!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars11.jpg" alt="" loading="lazy"><div><b>Лена</b><span>2025 год</span></div></div><div class="body">Все ещё тяжело подытожить. Впечатлений на долгое время хватит. Мне понравилось, что компактная группа, с каждым можно было пообщаться и все были на одной волне без конфликтов или сложностей. Исландия порадовала хорошей погодой и комфортно можно было гулять и задерживаться в местах ,что особенно понравились. Петя не только отличный гид, но и замечательный человек :) Всё продумал так, чтобы было интересно, не нагруженно и комфортно. Исландия это взрыв эмоций, иногда даже переполняющих через край, но это не минус, а супер крутой опыт. Спасибо огромное💗</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars12.jpg" alt="" loading="lazy"><div><b>Яэль</b><span>2025 год</span></div></div><div class="body">Петя, спасибо за незабываемую поездку в необыкновенную страну!<br><br>Я знала, что в Исландии красиво, видела фотографии и видео у тебя в соцсетях, но реальность превзошла ожидания.<br>Необъятные просторы, девственность природы, драматические изменения ландшафта - то зеленые горы, то черные поля лавы, то ледники, то сиреневые люпины, то громадные водопады, добрые лошади, бегающие в самых неожиданных местах овечки, плавающие тюлени, летающие со скоростью света рыжеклювые тупики… Передать все словами не получится. Надо смотреть и чувствовать. Красота непередаваемая!<br>Ты собрал такую замечательную компанию участников! С первого же дня мы стали как родные. Наше общение, шутки и смех еще надолго останутся со мной.<br><br>И ты как организатор, гид и наш вождь - достоин самых больших комплиментов! Я написала выше.<br><br>Огромное тебе спасибо ❤️</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars13.jpg" alt="" loading="lazy"><div><b>Мишель</b><span>2025 год</span></div></div><div class="body">Поездка подарила мне море впечатлений. Всё было организовано отлично — сразу чувствовались забота, внимание к деталям и любовь к стране. Природа удивила масштабом и красотой, многие моменты точно останутся в памяти на года. В этой поездке было всё: и приключения, и весёлые вечера с настольными играми в компании новых друзей, и настоящий отдых для души. Если хочется оказаться на другой планете, подальше от повседневных забот и навязчивых коллег, то Исландия — именно то самое место.</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars14.jpg" alt="" loading="lazy"><div><b>Саша</b><span>2019 год</span></div></div><div class="body">Если вам уже успели наскучить стандартные поездки по странам Европы в стиле главная площадь города, главный мужик на коне города, главный дворец/башня/собор города - настойчиво рекомендую познакомиться с невероятной Исландией вместе с Петром Клоцем! Съездил в мае 2019 года - до сих пор под впечатлением! И видовая, и логистическая составляющие этой поездки - на высшем уровне! Уже начинаю вам завидовать!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars15.jpg" alt="" loading="lazy"><div><b>Вероника</b><span>2018 год</span></div></div><div class="body">Друзья мои! Это бомбический тур! Это возможность на целую неделю переместиться в иную реальность! Такой красоты и таких пейзажей вы не увидите больше нигде!!! Ну и конечно же с Петром Клоцем все организационные моменты будут продуманы до мелочей: аренда самых лучших домиков, интернет-связь на протяжении всего путешествия, комфортные машинки, ну и, конечно же, профессиональные фото и офигенные видео с коптера на долгую память! Честно скажу, это лучшее приключение, которое со мной приключалось!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars16.jpg" alt="" loading="lazy"><div><b>Аня</b><span>2018 год</span></div></div><div class="body">Мне 2018 подарил незабываемую поездку в Исландию! Это must see! Поэтому: кто там в ответ на мои фото в Инстаграме писал, что ах как хочется в Исландию - это ваш шанс, пишите Петру и будьте счастливы!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars17.jpg" alt="" loading="lazy"><div><b>Светлана</b><span>2026 год</span></div></div><div class="body">Огромное спасибо за это невероятное путешествие по Исландии!. Кажется, что каждый день нашего маршрута был просчитан с математической точностью: идеальное сочетание локаций, времени, эмоций, комфорта, проживания и впечатлений. Мы успевали увидеть самое красивое именно тогда, когда это производило максимальный эффект.</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars18.jpg" alt="" loading="lazy"><div><b>Алла</b><span>2026 год</span></div></div><div class="body">Это была замечательная поездка и незабываемые впечатления!<br>Очень все понравилось. Организация на самом высоком уровне - все было продумано до мелочей . Каждый день нашего путешествия был полон и разнообразен. Но самое главное на мой взгляд, это созданная Петром атмосфера доброжелательности и приятного общения. Огромное тебе спасибо, Петя❣️</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars19.jpg" alt="" loading="lazy"><div><b>Юля</b><span>2026 год</span></div></div><div class="body">Мы впервые приехали в Исландию большой компанией из 12 человек и для нас было важно не только увидеть страну во всей ее красоте, но и не утонуть в бесконечной организации поездки. Когда путешествует столько людей, на планирование, бронирование и поиск интересных мест уходят много сил и времени. Петя взял все эти заботы на себя и оказался именно тем гидом и организатором, о котором можно только мечтать. Благодаря ему мы увидели Исландию не глазами туристов, а по-настоящему познакомились с этой удивительной страной. Он показывал нам не только туристические точки, но и невероятные места, о которых знают далеко не все путешественники. Особенно впечатляло, насколько хорошо Петя чувствует Исландию: он знал, в какое время лучше приехать в каждую локацию, чтобы избежать толп людей, где самые красивые виды, где можно задержаться подольше, а где стоит поймать особенный момент. Казалось, что для каждого места у него есть свой секрет. Но самое ценное - это атмосфера, которую он создал в поездке. Нам оставалось только наслаждаться путешествием, довериться его опыту и получать удовольствие от каждого дня. Благодаря Пете наша первая встреча с Исландией получилась яркой, легкой и по-настоящему незабываемой. Спасибо!</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars20.jpg" alt="" loading="lazy"><div><b>Лиза</b><span>2026 год</span></div></div><div class="body">Это была удивительная поездка в которой все было продуманно до мелочей и даже погода на радовала ясными солнечными днями. Сказочно красивая природа, небольшие трекинги, лежание в горячих источниках, и главное - это забота, которой нас окружил влюбленный в свое дело Петр Клоц.</div><button class="more" type="button">Читать полностью</button></article><article class="rev"><div class="who"><img src="img/avatars21.jpg" alt="" loading="lazy"><div><b>Илана</b><span>2026 год</span></div></div><div class="body">От поездки в восторге, увидела новую прекрасную страну и провела время в отличной компании. Не было ощущения групповой поездки, везде на локациях давалось достаточно времени, программа была насыщенная, при этом довольно гибкая - учитывались пожелания членов группы. Не могу не отметить бесконечное терпение и отзывчивость Пети, он и фото помогал сделать и мог подстраховать при каких-то непростых погодных условиях… в общем, было весело, познавательно, легко, и осталась куча чудесных воспоминаний🥰☺️</div><button class="more" type="button">Читать полностью</button></article></div>
+</section>
+
+<section class="sec program" id="program">
+  <div class="wrap narrow">
+    <h2 style="text-align:left">Программа по дням*</h2>
+    <div class="day"><b>День 1:</b>Прилет в Исландию, заселяемся в гостиницу в центре Рейкьявика, совместный ужин в классном ресторане исландской кухни: пробуем местную рыбу, баранину и другие деликатесы.</div><div class="day"><b>День 2:</b>День, в котором сразу выкручиваем шкалу эпичности на максимум! Наш путь на полуостров Снаефедльснес с удивительными скалами из застывшей лавы, черными церквями и водопадами, красивыми горами и ледником, где герои Жюль Верна спускались к центру Земли. По пути остановимся погладить дружелюбных исландских лошадок, поищем тюленей, увидим наши первые лавовые поля и кратеры. Вечером заселяемся в уютный коттедж под горой. После ужина едем встречать закат в мое любимое место с оранжевым маяком.</div><div class="day"><b>День 3:</b>Продолжаем исследовать полуостров, проезжаем мимо знаменитой горы Киркьюфетль из Игры престолов, едем через лавовые поля, а после обеда в удивительном ресторане едем в регион "Золотое кольцо" к извергающемуся гейзеру, а также к одному из самых известных водопадов - "Золотой водопад" Gullfoss. Ночуем в большом комфортабельном доме с грилем и гидромассажной ванной.</div><div class="day"><b>День 4:</b>Отправляемся в удивительный центр Исландии - регион Landmannalaugar. Некоторые называют его Луна, некоторые Марс. Драматически меняющиеся пейзажи, цветные горы, один из самых высоких водопадов Исландии Haifoss, озера в кратерах, бесконечные черные пустыни, а в конце - горячая река, в которой желающие смогут искупаться!</div><div class="day"><b>День 5:</b>Выезжаем на южное побережье: водопад Skogafoss и несколько секретных водопадов, черный пляж у города Vik и мыс Dyrholay, поля мха и каньоны. Попробуем повстречать самых милых на свете птичек тупиков. Ночуем в отеле посреди нигде.</div><div class="day"><b>День 6:</b>Продолжаем наш путь по южному побережью, огромные ледники и ледниковые лагуны. Конечно, самая знаменитая Ледниковая лагуна c огромными айсбергами, побродим по "бриллиантовому пляжу", на котором осколки льда, которому тысяча лет, блестят словно настоящие бриллианты. Едем к городу Hofn, где поужинаем, и направляемся в наш отель с купальнями и сауной с видом на ледник! Поздно вечером при условии подходящей погоды съездим на закатный мыс Stokksnes.</div><div class="day"><b>День 7:</b>Едем в обратном направлении в сторону Рейкьявика, заглянем в те места, которые не посетили в предыдущие дни (а их там еще ого-го сколько!). Возможно, погода приготовит нам сюрпризы! Возвращаемся в Рейкьявик.</div><div class="day"><b>День 8:</b>Гуляем по самой уютной столице в мире, фотографируем муралы, покупаем сувениры. Желающие смогут посетить музеи или крутой спа-комплекс на берегу моря Sky Lagoon - лучшую лагуну Исландии по моему мнению, мнению моих предыдущих групп и даже моих исландских друзей, которые были во всех лагунах.<br>Прощаемся друг с другом, с Исландией и едем в аэропорт. В зависимости от времени вылета могут быть разные варианты проведения дня.</div>
+    <p class="note">*Программа носит ознакомительный характер, описаны основные точки (на маршруте их гораздо больше), также программа может меняться в зависимости от погоды и прочих внешних факторов. Моя цель - сделать поездку максимально насыщенной и комфортной, показать как можно больше граней Исландии.</p>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <h2>Записаться и задать любые вопросы. Пишите мне:</h2>
+    <div data-gallery><img class="me" src="img/bio01.jpg" alt="Петр Клоц" loading="lazy"></div>
+    <p class="name">Петр Клоц</p>
+    <p class="role">Организатор поездки</p>
+    <p class="bio">Путешествовал от Аргентины до Японии и от ЮАР до Норвегии, но главная любовь - Исландия. Был в Исландии больше 20 раз, влюблен в эту страну и обожаю показывать ее красоты своим спутникам.</p>
+    <p class="msg">Напишите мне в любой мессенджер:</p>
+    <div class="mess">
+      <a href="https://t.me/peterklots" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M21.9 4.3c.3-1.2-.5-1.7-1.3-1.4L2.9 9.7c-1.2.5-1.2 1.2-.2 1.5l4.5 1.4 1.7 5.3c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.2-2.1 4.6 3.4c.8.5 1.4.2 1.6-.8l2.8-13.5zM8.3 12.3l9.4-5.9c.5-.3.9-.1.5.2l-7.6 6.9-.3 3.3-2-4.5z"/></svg>Telegram</a>
+      <a href="https://wa.me/972534380344" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <h2 class="reveal" style="padding:0 20px">И еще немного фотографий для мотивации и вдохновения:</h2>
+  <div class="strip" data-gallery><figure><img src="img/final01.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/final02.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/final03.jpg" alt="Исландия" loading="lazy"></figure><figure><img src="img/final04.jpg" alt="Исландия" loading="lazy"></figure></div>
+</section>
+
+<footer>© Klots Travel · <a href="https://klotstravel.com/">klotstravel.com</a></footer>
+
+<nav class="bottomnav" id="bottomnav">
+  <a href="#about">О поездке</a><a href="#houses">Где живем</a><a href="#price">Условия</a><a href="#reviews">Отзывы</a><a href="#program">Программа</a>
+</nav>
+
+<button class="totop" id="totop" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M5 15l7-7 7 7"/></svg></button>
+
+<div class="modal" id="revmodal" role="dialog" aria-modal="true"><div class="box"><button class="close" aria-label="Закрыть">×</button><div class="rev-full"></div></div></div>
+<div class="modal lb" id="lightbox" role="dialog" aria-modal="true"><button class="close" aria-label="Закрыть">×</button><button class="nav prev" aria-label="Предыдущее фото">‹</button><img alt=""><button class="nav next" aria-label="Следующее фото">›</button><div class="count"></div></div>
+
+<script>
+(function(){
+  const top = document.getElementById('top'), bn = document.getElementById('bottomnav'), tt = document.getElementById('totop');
+  const cover = document.querySelector('.cover');
+  function onScroll(){ const past = window.scrollY > cover.offsetHeight - 80; top.classList.toggle('show', past); bn.classList.toggle('show', past); tt.classList.toggle('show', window.scrollY > 1200); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  tt.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // плавное появление блоков
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -60px 0px'}) : null;
+  document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+  // отзывы: листалка
+  const slider = document.getElementById('slider');
+  document.querySelectorAll('.arrow').forEach(b => b.addEventListener('click', () => {
+    const card = slider.querySelector('.rev'); const step = card ? card.offsetWidth + 24 : 300;
+    slider.scrollBy({left: step * (+b.dataset.dir), behavior:'smooth'});
+  }));
+  // «Читать полностью» — только у длинных отзывов
+  const rm = document.getElementById('revmodal'), rf = rm.querySelector('.rev-full');
+  function openModal(m){ m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal(m){ m.classList.remove('open'); document.body.style.overflow = ''; }
+  slider.querySelectorAll('.rev').forEach(card => {
+    const body = card.querySelector('.body'), more = card.querySelector('.more');
+    if (body.scrollHeight <= body.clientHeight + 2) more.hidden = true;
+    more.addEventListener('click', () => {
+      rf.innerHTML = '';
+      const who = card.querySelector('.who').cloneNode(true); const t = document.createElement('div'); t.innerHTML = body.innerHTML; t.style.fontSize = '17px';
+      rf.append(who, t); openModal(rm);
+    });
+  });
+  rm.addEventListener('click', e => { if (e.target === rm || e.target.closest('.close')) closeModal(rm); });
+
+  // просмотр фото
+  const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), cnt = lb.querySelector('.count');
+  let set = [], idx = 0;
+  function show(i){ idx = (i + set.length) % set.length; lbImg.src = set[idx].dataset.full || set[idx].src; lbImg.alt = set[idx].alt; cnt.textContent = set.length > 1 ? (idx + 1) + ' / ' + set.length : ''; }
+  document.querySelectorAll('[data-gallery] img').forEach(img => img.addEventListener('click', () => {
+    set = Array.from(img.closest('[data-gallery]').querySelectorAll('img')); show(set.indexOf(img)); openModal(lb);
+  }));
+  lb.querySelector('.prev').addEventListener('click', e => { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector('.next').addEventListener('click', e => { e.stopPropagation(); show(idx + 1); });
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.closest('.close')) closeModal(lb); });
+  let sx = null;
+  lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1)); sx = null; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeModal(lb); closeModal(rm); }
+    if (lb.classList.contains('open')) { if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1); }
+  });
+})();
+</script>
+</body>
+</html>
