@@ -212,7 +212,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <a class="logo" href="https://klotstravel.com/">KLOTSTRAVEL.COM</a>
     <nav>
-      <a href="#about">Что будет в поездке</a>
+      <a href="#top">Что будет в поездке</a>
       <a href="#houses">Где живем</a>
       <a href="#price">Условия</a>
       <a href="#reviews">Отзывы</a>
@@ -222,7 +222,7 @@ footer a{color:var(--muted)}
   </div>
 </header>
 
-<section class="cover" style="background-image:url(img/cover01.jpg)">
+<section class="cover" id="top" style="background-image:url(img/cover01.jpg)">
   <div>
     <p class="kicker">Путешествие к водопадам и вулканам</p>
     <p class="dates">3 - 10 июня 2027<br>10 - 17 июня 2027<br>17 - 24 июня 2027<br>24 июня - 1 июля 2027<br>1 - 8 июля 2027<br>8 - 15 июля 2027</p>
@@ -375,7 +375,7 @@ footer a{color:var(--muted)}
 <footer>© Klots Travel · <a href="https://klotstravel.com/">klotstravel.com</a></footer>
 
 <nav class="bottomnav" id="bottomnav">
-  <a href="#about"><img src="img/nav-about.svg" alt=""><span>О поездке</span></a>
+  <a href="#top"><img src="img/nav-about.svg" alt=""><span>О поездке</span></a>
   <a href="#houses"><img src="img/nav-houses.svg" alt=""><span>Где живем</span></a>
   <a href="#price"><img src="img/nav-price.svg" alt=""><span>Условия</span></a>
   <a href="#reviews"><img src="img/nav-reviews.svg" alt=""><span>Отзывы</span></a>
@@ -394,6 +394,7 @@ footer a{color:var(--muted)}
   function onScroll(){ const past = window.scrollY > cover.offsetHeight - 80; top.classList.toggle('show', past); bn.classList.toggle('show', past); tt.classList.toggle('show', window.scrollY > 1200); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
   tt.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  document.querySelectorAll('a[href="#top"]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); history.replaceState(null,'',location.pathname); window.scrollTo({top:0, behavior:'smooth'}); }));
 
   // плавное появление блоков
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -60px 0px'}) : null;
