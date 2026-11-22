@@ -55,7 +55,11 @@ h2{font-size:34px;line-height:1.2;font-weight:700;color:var(--ink);text-align:ce
 .cover>*{position:relative}
 .cover .kicker{font-size:22px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin:0 0 20px}
 .cover .dates{font-size:22px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.3;margin:0 0 26px}
-.cover h1{font-size:92px;line-height:1;margin:0 0 54px;font-weight:700}
+.cover h1{font-size:92px;line-height:1;margin:0 0 34px;font-weight:700}
+.cover{align-items:flex-start;padding-top:110px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:0 auto 30px}
+.tiles a{display:flex;align-items:center;justify-content:center;min-height:64px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#fff;text-decoration:none;font-weight:500;font-size:18px;line-height:1.25;transition:background .2s,color .2s}
+.tiles a:hover{background:#fff;color:var(--ink)}
 .cover .btn{font-size:18px;padding:16px 46px}
 .cover .scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:28px;height:28px;border-right:2px solid #fff;border-bottom:2px solid #fff;rotate:45deg;opacity:.8;animation:bob 2s infinite}
 @keyframes bob{50%{translate:0 6px}}
@@ -173,7 +177,12 @@ footer a{color:var(--muted)}
   .top .btn{padding:8px 16px;font-size:14px}
   .cover .kicker{font-size:15px}
   .cover .dates{font-size:16px}
-  .cover h1{font-size:54px;margin-bottom:36px}
+  .cover{padding-top:76px}
+  .cover h1{font-size:54px;margin-bottom:24px}
+  .cover .dates{margin-bottom:18px}
+  .cover .kicker{margin-bottom:12px}
+  .tiles{gap:10px;margin-bottom:24px}
+  .tiles a{min-height:56px;font-size:16px;border-radius:12px}
   .strip{grid-template-columns:1fr 1fr;gap:10px;padding:10px}
   .feat{grid-template-columns:1fr;margin-bottom:30px}
   .feat img{order:-1}
@@ -218,6 +227,12 @@ footer a{color:var(--muted)}
     <p class="kicker">Путешествие к водопадам и вулканам</p>
     <p class="dates">3 - 10 июня 2027<br>10 - 17 июня 2027<br>17 - 24 июня 2027<br>24 июня - 1 июля 2027<br>1 - 8 июля 2027<br>8 - 15 июля 2027</p>
     <h1>Исландия</h1>
+    <nav class="tiles" aria-label="Разделы">
+      <a href="gear/">Как подготовиться</a>
+      <a href="faq/">Частые вопросы</a>
+      <a href="#program">Программа</a>
+      <a href="#price">Стоимость</a>
+    </nav>
     <a class="btn" href="#contact">Поехали!</a>
   </div>
   <a class="scroll" href="#about" aria-label="Листать вниз"></a>
